@@ -7,7 +7,13 @@ import { ConfigModule } from '@nestjs/config';
 import { RolesGuard } from './auth/guards/roles.guard';
 import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './auth/guards/jwt-auth.guard';
-import { ProductsModule } from './products/products.module';
+import { ProductsModule } from './modules/products/products.module';
+import { ProductCategoryModule } from './modules/product-category/product-category.module';
+import { DiscountModule } from './modules/discount/discount.module';
+import { OrderDetailsModule } from './modules/order-details/order-details.module';
+import { OrderItemsModule } from './modules/order-items/order-items.module';
+import { PaymentDetailsModule } from './modules/payment-details/payment-details.module';
+import { CartItemModule } from './modules/cart-item/cart-item.module';
 
 @Module({
   imports: [
@@ -27,6 +33,12 @@ import { ProductsModule } from './products/products.module';
       synchronize: true,
     }),
     ProductsModule,
+    ProductCategoryModule,
+    DiscountModule,
+    OrderDetailsModule,
+    OrderItemsModule,
+    PaymentDetailsModule,
+    CartItemModule,
   ],
   providers: [
     // {
