@@ -7,6 +7,7 @@ import { ConfigModule } from '@nestjs/config';
 import { RolesGuard } from './auth/guards/roles.guard';
 import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './auth/guards/jwt-auth.guard';
+import { ProductsModule } from './products/products.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { JwtAuthGuard } from './auth/guards/jwt-auth.guard';
       entities: [User],
       synchronize: true,
     }),
+    ProductsModule,
   ],
   providers: [
     // {
