@@ -14,6 +14,13 @@ import { OrderDetailsModule } from './modules/order-details/order-details.module
 import { OrderItemsModule } from './modules/order-items/order-items.module';
 import { PaymentDetailsModule } from './modules/payment-details/payment-details.module';
 import { CartItemModule } from './modules/cart-item/cart-item.module';
+import { Product } from './modules/products/entities/product.entity';
+import { ProductCategory } from './modules/product-category/entities/product-category.entity';
+import { OrderDetail } from './modules/order-details/entities/order-detail.entity';
+import { OrderItem } from './modules/order-items/entities/order-item.entity';
+import { Discount } from './modules/discount/entities/discount.entity';
+import { CartItem } from './modules/cart-item/entities/cart-item.entity';
+import { PaymentDetail } from './modules/payment-details/entities/payment-detail.entity';
 
 @Module({
   imports: [
@@ -29,7 +36,7 @@ import { CartItemModule } from './modules/cart-item/cart-item.module';
       username: process.env.DATABASE_USERNAME,
       password: process.env.DATABASE_PASSWORD,
       database: process.env.DATABASE_NAME,
-      entities: [User],
+      entities: [User, Product, ProductCategory, OrderDetail, OrderItem, Discount, CartItem, PaymentDetail],
       synchronize: true,
     }),
     ProductsModule,
