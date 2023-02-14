@@ -1,19 +1,6 @@
-## NestJs Starter Rest API Kit
+## NestJs Ecommerce API
+API development for ecommerce.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Starter kit Features
-
-One of our main principals has been to keep the starter kit as lightweight as possible. With that in mind, here are some of the features that we have added in this starter kit.
-
-| Feature            | Info              | Progress |
-| ------------------ | ----------------- | -------- |
-| Configuration      | Environment       | Done     |
-| Hashing            | bcrypt            | Done     |
-| Authentication     | JWT               | Done     |
-| Authorization      | RBAC (Role based) | Done     |
-| ORM Integration    | TypeORM           | Done     |
-| Request Validation | class-validator   | Done     |
 
 ## Installation
 
